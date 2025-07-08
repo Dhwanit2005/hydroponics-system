@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydroponic System Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hydroponic System Dashboard</h1>
+
+        <div class="sensors">
+            <div class="card">
+                <h2>TDS</h2>
+                <div class="value" id="tds">-- ppm</div>
+            </div>
+            <div class="card">
+                <h2>pH</h2>
+                <div class="value" id="ph">--</div>
+            </div>
+            <div class="card">
+                <h2>Temperature</h2>
+                <div class="value" id="temperature">-- °C</div>
+            </div>
+            <div class="card">
+                <h2>Water Level</h2>
+                <div class="value" id="water_level">-- cm</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <h2>Pump Controls</h2>
+            <button id="dose_nutrient">Dose Nutrients (10ml)</button>
+            <button id="dose_ph">Dose pH Adjuster (5ml)</button>
+        </div>
+
+        <div class="log">
+            <h2>System Log</h2>
+            <div id="log_entries"></div>
+        </div>
+    </div>
+
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>
